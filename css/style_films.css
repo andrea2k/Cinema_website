@@ -1,0 +1,37 @@
+/* Catogoriën tekst */
+.genre-title {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+/* Gehele movie grid met catogoriën */
+.genre-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(15px, 1fr));
+    grid-gap: 50px;
+    padding: 10px;
+}
+
+/* Instellingen voor losse foto's */
+img {
+    width: 250px;
+}
+
+/* Text onder de filmposters */
+figcaption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Ruimte onder de filmposters */
+figure {
+    margin-bottom: 70px;
+}
+
+/* Als de muis over de filmposter gaat */
+figure:hover{
+    transition-duration: 200ms;
+    filter: grayscale(10%) opacity(40%);
+}
+
+

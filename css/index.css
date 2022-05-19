@@ -1,0 +1,111 @@
+body {
+    background:
+            radial-gradient(
+                    34.27% 34.27% at 50% 65.73%,
+                    rgba(11, 12, 14, 0.9) 0%,
+                    #0B0C0E 100%
+            );
+}
+
+#current {
+    background: linear-gradient(
+            180deg,
+            var(--accent-color) -10%,
+            rgba(241, 241, 241, 0.01)
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    color: rgba(60, 145, 230, 0.3);
+    text-decoration: underline;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw;
+    height: 100%;
+
+}
+
+main section h1 {
+    font-size: 3rem;
+
+}
+
+main section p {
+    padding-top: 5vh;
+}
+
+main img {
+    filter: grayscale(30%) brightness(70%);
+
+    max-width: 100%;
+    height: auto;
+
+    background-image: radial-gradient(
+            168.94% 168.94% at 9.84% 52.6%,
+            rgba(11, 14, 12, 0.9) 0%,
+            rgba(11, 12, 14, 0) 100%
+    );
+}
+
+button {
+    font-size: 2rem;
+    background: linear-gradient(
+            251.11deg,
+            rgba(60, 145, 230, 0.62) 27.12%,
+            rgba(60, 145, 230, 0.31) 102.97%
+    );
+    margin: 2rem;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.fa-arrow-left, .fa-arrow-right{
+    font-size: 2rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+/*proportions according to screen size*/
+
+/*large screens*/
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    main {
+        align-items: center;
+    }
+
+    main section {
+        height: 100%;
+        max-width: 20%;
+    }
+
+    main section h1 {
+        font-size: 3rem;
+    }
+
+    main section p {
+        font-size: 1.5rem;
+    }
+
+    main img {
+        max-width: 60%;
+        height: auto;
+    }
+
+}
+

@@ -1,0 +1,76 @@
+.header-gradient {
+    margin-top:3%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+    font-size: 1.5rem;
+}
+
+.ul-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ul-item:hover{
+    cursor: pointer;
+    color:#0f345a ;
+}
+
+.head{
+    position: relative;
+    font-size: 25px;
+    right: 50px;
+    bottom: 50px;
+    margin-bottom: 60px;
+}
+
+.information{
+    height: 200px;
+    padding: 100px;
+    margin-top: 2%;
+    display: none;
+}
+
+
+.button {
+    position: relative;
+    left: 90%;
+    bottom: 80px;
+    font-size: 2rem;
+    background: linear-gradient(
+            251.11deg,
+            rgba(60, 145, 230, 0.62) 27.12%,
+            rgba(60, 145, 230, 0.31) 102.97%
+    );
+    margin: 2rem;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 100ms;
+}
+
+
+@media (max-width: 700px) {
+    .location {
+      font-size: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .head{
+        font-size: 15px;
+    }
+    .information{
+        font-size: 10px;
+    }
+}

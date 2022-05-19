@@ -1,0 +1,9 @@
+button {
+    font-size: 2rem;
+    background: linear-gradient(
+            251.11deg,
+            rgba(60, 145, 230, 0.62) 27.12%,
+            rgba(60, 145, 230, 0.31) 102.97%
+    );
+    margin: 2rem;
+}

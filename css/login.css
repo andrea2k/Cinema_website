@@ -1,0 +1,69 @@
+.submit{
+    min-height: 2rem;
+    min-width: auto;
+    border-radius:10px;
+}
+
+label {
+    display: block;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 25px;
+
+    gap: 3rem;
+    padding: 2rem;
+
+    background-color:#1D3F61;
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+button {
+    width:200px;
+    height:50px;
+    border: solid;
+}
+
+#login-button {
+    background-color:black;
+}
+
+#signup-button {
+    background-color: #1D3F61;
+}
+
+#consent {
+    display: flex;
+    gap: 1rem;
+}
+
+#consent-label {
+    font-size: 1rem;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+

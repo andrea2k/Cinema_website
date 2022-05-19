@@ -1,0 +1,93 @@
+main {
+    flex-direction: column;
+}
+
+#seat-information {
+    position: relative;
+    margin-right: 35px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#available{
+    color: rgb(209, 172, 0);
+}
+#select{
+    color: #17B890;
+}
+
+#sold{
+    color: rgb(191, 33, 30);
+}
+
+#screen {
+    width: 100%;
+    height: 1rem;
+    background: #f1f1f1;
+
+    margin: 4vh 0 5vh;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.grid-container {
+    display: grid;
+
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+
+    grid-template-columns: repeat(10, minmax(15px, 1fr));
+    grid-template-rows: repeat(6, minmax(1.5rem, 1fr));
+}
+
+.grid-item {
+    padding: 0;
+    cursor: pointer;
+
+    border-radius: 0 0 8px 8px;
+
+    background: rgb(209, 172, 0);
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.grid-item:hover {
+    transform: scale(1.2);
+    transition-duration: 100ms;
+}
+
+.selected{
+    background: #17B890;
+}
+.taken_1{
+    background: rgb(191, 33, 30);
+    cursor: default;
+}
+
+#seats{
+    text-align:center;
+    margin: 3vh 0 0vh;
+}
+
+#seat-select-done {
+    position: relative;
+    left: 45%;
+    align-items: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+    background: linear-gradient(
+            251.11deg,
+            rgba(60, 145, 230, 0.62) 27.12%,
+            rgba(60, 145, 230, 0.31) 102.97%
+    );
+}
+
+#seat-select-done:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 100ms;
+}
