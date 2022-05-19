@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--    standard shit-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--    custom icons from fontawesome-->
+    <script src="https://kit.fontawesome.com/9458b18579.js" crossorigin="anonymous"></script>
+
+    <!--    custom font from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!--    get jquery api from google cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--    link stylesheet-->
+    <link rel="stylesheet" href="../styles/base.css" type="text/css">
+    <link rel="stylesheet" href="../styles/navbar.css" type="text/css">
+    <link rel="stylesheet" href="../styles/forgotpwd.css" type="text/css">
+
+    <!--    link javascript-->
+    <script src="../scripts/toggleSearch.js"></script>
+    <script src="../scripts/showResult.js"></script>
+
+    <!--    webpage title-->
+    <title>Webtechnologie voor KI/INF 2022</title>
+</head>
+
+<body>
+<!--    navbar-->
+<nav>
+    <a href="../index.php"><img id="logo" src="../images/logo-cinema.png" alt="logo cinema"/></a>
+
+    <ul>
+        <form id="searchbar">
+            <input id="textbox"
+                   type="text"
+                   placeholder="Search.."
+                   onkeyup="showResult(this.value)"
+            >
+            <div id="suggestions"></div>
+        </form>
+
+        <li class="nav-item" onclick="toggleSearch()"><i class="fas fa-search"></i></li>
+        <li class="nav-item"><a href="../pages/alleFilms.php">FILMS</a></li>
+        <li class="nav-item"><a href="../pages/signup.php">SIGNUP</a></li>
+        <li class="nav-item"><a href="../pages/login.php">LOGIN</a></li>
+    </ul>
+</nav>
+
+
+<header><h1 class="header-gradient"> FORGOTTEN PASSWORD </h1></header>
+<article class = "forgot">
+    <h3>
+        If you forgot your password, please contact the developpers! <br>
+        You can contact us by sending us an email: logocinema@gmail.com or call us: 06-66666666. <br>
+        We are available from 10am - 4pm. 
+    </h3>
+</article>
+
+</body>
+</html>
+
